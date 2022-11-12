@@ -4,9 +4,33 @@
   box-sizing: border-box;
 }
 
-.portfolio-header{
-    display: flex;
-justify-content: space-between;
-height: 50px;
-background-color: aquamarine;
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: aquamarine;
+  height: 50px;
+  width: 100%;
+}
+
+.my-title {
+  width: 450px;
+  background-color: coral;
+}
+.my-title-text {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.my-list {
+  width: 320px;
+  margin-right: 40px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
 }
