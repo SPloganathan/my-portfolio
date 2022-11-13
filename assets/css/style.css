@@ -8,20 +8,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: aquamarine;
+  background-color: rgb(105, 156, 170);
   height: 50px;
   width: 100%;
 }
 
 .my-title {
   width: 450px;
-  background-color: coral;
+  background-color: rgb(156, 154, 151);
 }
 .my-title-text {
   display: flex;
   justify-content: flex-end;
   font-size: 25px;
   padding: 5px;
+
 }
 
 .my-list {
@@ -33,4 +34,30 @@
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.subtitle-cover{
+    display:flex;
+    justify-content: space-between;
+    width:100%;
+    height: 150px;
+    background-color:rgb(156, 154, 151); 
+}
+.my-avatar-wrapper{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    justify-content: center;
+}
+
+.my-avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.subtitle-text{
+    display:flex;
+    align-items: flex-end;
+    margin-right: 40px;
+    padding:20px;
 }
