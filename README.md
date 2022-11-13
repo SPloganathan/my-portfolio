@@ -27,3 +27,9 @@ WHEN I click on the images of the applications
 THEN I am taken to that deployed application
 WHEN I resize the page or view the site on various screens and devices
 THEN I am presented with a responsive layout that adapts to my viewport
+
+## Things Done
+
+### Wireframe Screenshot
+
+! [alt+text] (./assets/images/screenshot/wireframe.png)
