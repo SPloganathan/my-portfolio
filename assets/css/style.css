@@ -2,6 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+a{
+    text-decoration: none;
+    color: black;
 }
 
 .portfolio-header {
@@ -54,9 +59,9 @@
 }
 
 .my-avatar {
-    width: 150px;
-    height: 150px;
-    border: 3px solid rgb(37 35 38 / 54%);
+    width: 190px;
+    height: 213px;
+    box-shadow: 2px 2px 60px;
 }
 .subtitle-text-wrapper {
     display: flex;
@@ -106,6 +111,9 @@
     height: 200px;
     border: 3px solid rgb(154, 99, 108);
     margin: 5px;
+    background-image: url('../images/pink.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 .items-wrapper {
     display: grid;
@@ -117,6 +125,9 @@
     border: 3px solid rgb(154, 99, 108);
     margin: 5px;
     height: 110px;
+    background-image: url('../images/pink.jpeg');
+    background-size: cover;
+    background-position: center;
 }
 .contact-wrapper {
     display: flex;
