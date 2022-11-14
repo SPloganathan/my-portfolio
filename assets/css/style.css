@@ -74,8 +74,8 @@
     display: flex;
 margin: 5px;
 }
-.about-me-title{
-width: 300px;
+.title-container,.work-title{
+width: 25%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
@@ -83,7 +83,34 @@ width: 300px;
     border-right: 3px solid rgb(191 151 205 / 54%);
     
 }
-.about-me{
+.title-text{
     font-size: 26px;
     padding:10px;
+}
+/* created a work container using flexbox */
+.work-wrapper{
+    display:flex;
+    width:100%;
+    padding:20px;
+}
+
+.work-title{
+    width:22%
+}
+.work-item-horiseon{
+    display: flex;
+    height: 200px;
+    border: 3px solid rgb(154, 99, 108);
+    margin:5px;
+}
+.items-wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.upcoming-work{
+    display: flex;
+    padding: 10px;
+    border: 3px solid rgb(154, 99, 108);
+    margin: 5px;
+    height: 110px;
 }
