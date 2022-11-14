@@ -108,16 +108,34 @@ a {
     width: 80%;
     flex-direction: column;
 }
+.work-horiseon-wrapper{
+    position: relative;
+}
 
 .work-item-horiseon {
     display: flex;
     height: 200px;
     border: var(--lightborder);
     margin: 5px;
-    background-image: url('../images/pink.jpeg');
+    background-image: url('../images/horiseonscreen.png');
     background-size: cover;
     background-position: center;
-    filter: blur(4px);
+    opacity:50%;
+    
+}
+.work-item-horiseon:hover{
+    opacity:100%;
+}
+.horiseon-text {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid;
+    background-color: #e1d0d0;
+    gap: 5px;
+    position: absolute;
+    top:60%;
 }
 .items-wrapper {
     display: grid;
@@ -149,16 +167,6 @@ a {
     align-items: center;
     list-style-type: none;
 }
-.horiseon-details {
-    display: flex;
-    align-items: flex-end;
-}
-.horiseon-text {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid;
-    background-color: #bfabab;
-    gap: 5px;
-}
+
+
+
