@@ -1,36 +1,56 @@
+/* Universal selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
+/* defined variable for common properties */
 :root {
-    --darktheme: rgb(0 0 0 / 34%);
-    --lighttheme: rgb(191 151 205 / 54%);
-    --lightpink: rgb(191 151 205 / 88%);
-    --lightborder: 3px solid rgb(154, 99, 108);
+    --dark-theme: rgb(0 0 0 / 34%);
+    --light-theme: rgb(191 151 205 / 54%);
+    --light-pink: rgb(191 151 205 / 88%);
+    --light-border: 3px solid rgb(154, 99, 108);
 }
 a {
     color: black;
 }
+/* common properties */
 .section-wrapper {
     display: flex;
     padding: 20px;
 }
-
+.column-split-wrapper {
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+}
+.title-container {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 10px;
+    border-right: 3px solid var(--light-theme);
+}
+.title-text {
+    font-size: 26px;
+    padding: 10px;
+}
+/* specific class properties */
 .portfolio-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--lighttheme);
+    background-color: var(--light-theme);
     height: auto;
     width: 100%;
-    padding:20px 0px;
+    padding: 20px 0px;
 }
 
 .my-title {
     width: 450px;
-    background-color: var(--darktheme);
+    background-color: var(--dark-theme);
     box-shadow: 2px 2px 7px;
 }
 .my-title-text {
@@ -56,7 +76,7 @@ a {
     justify-content: space-between;
     width: 100%;
     height: auto;
-    background-color: var(--darktheme);
+    background-color: var(--dark-theme);
     background-image: url('../images/subcover.jpeg');
     background-size: cover;
     background-position: center;
@@ -66,7 +86,7 @@ a {
     align-items: center;
     width: 450px;
     justify-content: center;
-    padding:10px;
+    padding: 10px;
 }
 
 .my-avatar {
@@ -82,33 +102,10 @@ a {
 }
 .subtitle-text {
     box-shadow: 4px 4px 10px;
-    background-color: var(--lightpink);
+    background-color: var(--light-pink);
     padding: 5px;
 }
 
-.title-container {
-    width: 20%;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-right: 10px;
-    border-right: 3px solid var(--lighttheme);
-}
-.title-text {
-    font-size: 26px;
-    padding: 10px;
-}
-.about-me-text {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-}
-
-.work-items-wrapper {
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-}
 .work-horiseon-wrapper {
     position: relative;
 }
@@ -116,7 +113,7 @@ a {
 .work-item-horiseon {
     display: flex;
     height: 200px;
-    border: var(--lightborder);
+    border: var(--light-border);
     margin: 5px;
     background-image: url('../images/horiseonscreen.png');
     background-size: cover;
@@ -137,6 +134,7 @@ a {
     position: absolute;
     top: 60%;
 }
+/* used grid to equally split the upcoming work items using frames */
 .items-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -144,7 +142,7 @@ a {
 .upcoming-work {
     display: flex;
     padding: 10px;
-    border: var(--lightborder);
+    border: var(--light-border);
     margin: 5px;
     height: 110px;
     background-image: url('../images/pink.jpeg');
@@ -167,11 +165,12 @@ a {
     align-items: center;
     list-style-type: none;
 }
+/* Added media queries for screen size less than 820px */
 @media screen and (max-width: 820px) {
     .portfolio-header {
-        gap:10px;
+        gap: 10px;
         flex-direction: column;
-        padding:0px;
+        padding: 0px;
     }
     .my-title {
         width: 300px;
@@ -224,27 +223,27 @@ a {
         gap: 5px;
     }
 }
-@media screen and (max-width: 280px){
-.my-title{
-    width:270px;
+/* Added media queries for screen size less than 280px  */
+@media screen and (max-width: 280px) {
+    .my-title {
+        width: 270px;
+    }
+    .nav-items {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    .portfolio-header {
+        gap: 10px;
+        padding: 0px;
+    }
+    .subtitle-text {
+        font-size: 14px;
+    }
+    .upcoming-work {
+        font-size: 14px;
+    }
+    .items-wrapper {
+        grid-template-columns: 120px 120px;
+    }
 }
-.nav-items{
-    flex-direction: column;
-    align-items: center;
-    gap:5px;
-}
-.portfolio-header{
-    gap:10px;
-    padding:0px;
-}
-.subtitle-text{
-    font-size: 14px;
-}
-.upcoming-work{
-    font-size: 14px;
-}
-.items-wrapper{
-    grid-template-columns: 120px 120px;
-}
-}
-    
