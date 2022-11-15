@@ -4,16 +4,16 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
-:root{
-    --darktheme:rgb(0 0 0 / 34%);
-    --lighttheme:rgb(191 151 205 / 54%);
-    --lightpink:rgb(191 151 205 / 88%);
-    --lightborder:3px solid rgb(154, 99, 108);
+:root {
+    --darktheme: rgb(0 0 0 / 34%);
+    --lighttheme: rgb(191 151 205 / 54%);
+    --lightpink: rgb(191 151 205 / 88%);
+    --lightborder: 3px solid rgb(154, 99, 108);
 }
 a {
     color: black;
 }
-.section-wrapper{
+.section-wrapper {
     display: flex;
     padding: 20px;
 }
@@ -80,7 +80,7 @@ a {
 }
 .subtitle-text {
     box-shadow: 4px 4px 10px;
-    background-color:var(--lightpink);
+    background-color: var(--lightpink);
     padding: 5px;
 }
 
@@ -102,13 +102,12 @@ a {
     flex-direction: column;
 }
 
-
 .work-items-wrapper {
     display: flex;
     width: 80%;
     flex-direction: column;
 }
-.work-horiseon-wrapper{
+.work-horiseon-wrapper {
     position: relative;
 }
 
@@ -120,11 +119,10 @@ a {
     background-image: url('../images/horiseonscreen.png');
     background-size: cover;
     background-position: center;
-    opacity:50%;
-    
+    opacity: 50%;
 }
-.work-item-horiseon:hover{
-    opacity:100%;
+.work-item-horiseon:hover {
+    opacity: 100%;
 }
 .horiseon-text {
     display: flex;
@@ -135,7 +133,7 @@ a {
     background-color: #e1d0d0;
     gap: 5px;
     position: absolute;
-    top:60%;
+    top: 60%;
 }
 .items-wrapper {
     display: grid;
@@ -167,6 +165,59 @@ a {
     align-items: center;
     list-style-type: none;
 }
-
-
-
+@media screen and (max-width: 820px) {
+    .portfolio-header {
+        height: 100px;
+        flex-direction: column;
+    }
+    .my-title {
+        width: 300px;
+        margin-top: 15px;
+    }
+    .my-title-text {
+        justify-content: center;
+        font-size: 16px;
+    }
+    .my-list {
+        margin-right: 0px;
+        margin-bottom: 20px;
+    }
+    .subtitle-cover {
+        flex-direction: column;
+        align-items: center;
+    }
+    .my-avatar-wrapper {
+        margin-top: 25px;
+    }
+    .subtitle-text-wrapper {
+        margin-right: 0px;
+    }
+    .subtitle-text {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+    .section-wrapper {
+        flex-direction: column;
+    }
+    .title-container {
+        width: 100%;
+        justify-content: center;
+        border: 0;
+    }
+    .about-me-text {
+        width: 100%;
+        align-items: center;
+    }
+    .work-items-wrapper {
+        width: 100%;
+        justify-content: center;
+    }
+    .contact-nav-wrapper {
+        width: 100%;
+    }
+    .contact-nav-items {
+        flex-direction: column;
+        gap: 5px;
+    }
+}
