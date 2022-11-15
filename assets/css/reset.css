@@ -1,0 +1,22 @@
+html,
+body,
+div,
+h1,
+h2,
+h3,
+a,
+img,
+strong,
+ul,
+li,
+article,
+footer,
+header,
+nav,
+section {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%; 
+    vertical-align: baseline;
+}
