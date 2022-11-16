@@ -35,4 +35,6 @@ Developing a portfolio to showcase my skills and talents to employers looking to
 
 ## Deployed Screenshot and URL
 
-![alt+text](./assets/images/screenshot/wireframe.png)
+## https://sploganathan.github.io/my-portfolio/
+
+![alt+text](./assets/images/screenshot/sploganathan-portfolio.png)
