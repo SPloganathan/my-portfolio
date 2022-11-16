@@ -207,9 +207,11 @@ a {
         justify-content: center;
         border: 0;
     }
-    .about-me-text {
-        width: 100%;
+    .center-align{
         align-items: center;
+    }
+    .column-split-wrapper {
+        width: 100%;
     }
     .work-items-wrapper {
         width: 100%;
@@ -221,6 +223,11 @@ a {
     .contact-nav-items {
         flex-direction: column;
         gap: 5px;
+    }
+}
+@media screen and (max-width: 414px) {
+    .items-wrapper {
+        grid-template-columns: 1fr;
     }
 }
 /* Added media queries for screen size less than 280px  */
@@ -242,8 +249,5 @@ a {
     }
     .upcoming-work {
         font-size: 14px;
-    }
-    .items-wrapper {
-        grid-template-columns: 120px 120px;
     }
 }
