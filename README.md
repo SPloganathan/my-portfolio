@@ -1,4 +1,4 @@
-# Sakthipriya-Portfolio
+# Sakthipriya - Portfolio
 
 ## Description
 
@@ -6,39 +6,33 @@ Developing a portfolio to showcase my skills and talents to employers looking to
 
 ## Things Done
 
-1.Wireframe Screenshot
+#### 1. Wireframe Screenshot
+![alt+text](./assets/images/screenshot/wireframe.png)
 
-! [alt+text] (./assets/images/screenshot/wireframe.png)
+#### 2. Created a Header container and divided it into 2 divisions using flexbox.
+- Name title.
+- Created Navigation items and linked it to corresponding section.
 
-2.Created a Header container and divided it into 2 divisions using flexbox.
+#### 3. Created a subtitle cover container and divided it into 2 divisions using flexbox.
+- Added background image in the subtitle container.
+- Avatar.
+- Subtitle.
 
--Name title.
--Created Navigation items and linked it to corresponding section.
+#### 4. Created about me section and divided it into 2 divisions using flexbox.
+- About me title.
+- About me text.
 
-3.Created a subtitle cover container and divided it into 2 divisions using flexbox.
+#### 5. Work section created and divided using flexbox.
+- Work title.
+- For the first work section added my first project and linked it. When we click on the project it will take us to the deployed page.
+- The upcoming work section has been splitted using grid.
 
--Added background image in the subtitle container.
--Avatar.
--Subtitle.
+#### 6. Created the contact me footer section.
+- Contact me title.
+- Contact me nav items and linked it.
 
-4.Created about me section and divided it into 2 divisions using flexbox.
-
--About me title.
--About me text.
-
-5.Work section created and divided using flexbox.
-
--Work title.
--For the first work section added my first project and linked it. When we click on the project it will take us to the deployed page.
--The upcoming work section has been splitted using grid.
-
-6.Created the contact me footer section.
-
--Contact me title.
--Contact me nav items and linked it.
-
-7.Used media queries for screen responsiveness.
+#### 7. Used media queries for screen responsiveness.
 
 ## Deployed Screenshot and URL
 
-! [alt+text]
+![alt+text](./assets/images/screenshot/wireframe.png)
