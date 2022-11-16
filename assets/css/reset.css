@@ -1,22 +1,24 @@
-html,
-body,
-div,
-h1,
-h2,
-h3,
-a,
-img,
-strong,
-ul,
-li,
-article,
-footer,
-header,
-nav,
-section {
+* {
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 100%; 
-    vertical-align: baseline;
-}
+    box-sizing: border-box;
+  }
+  
+  /* Gives the body element a parent height to compare against */
+  html {
+    height: 100%;
+  }
+  
+  body {
+    min-height: 100%;
+    font-family: sans-serif;
+  }
+  
+  h1, h2, h3 {
+    font-size: 100%;
+  }
+  
+  /* Removes default bullet points from lists */
+  ol, ul {
+    list-style: none;
+  }
