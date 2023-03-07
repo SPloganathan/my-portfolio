@@ -126,6 +126,9 @@ a {
 .marvel-item {
     background-image: url('../images/screenshot/marvelscreenshot.png');
 }
+.luv2h8-item {
+    background-image: url('../images/screenshot/luv-2-h8.png');
+}
 .work-item:hover {
     opacity: 100%;
 }
