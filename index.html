@@ -6,141 +6,124 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <!-- added reset stylesheet for browser style consistencies. -->
-        <link rel="stylesheet" href="./assets/css/reset.css" />
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Sakthipriya - Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Scada&display=swap" rel="stylesheet" />
+        <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.7/dist/iconify-icon.min.js"></script>
+        <title>Sakthi's Portfolio</title>
     </head>
     <body>
         <header class="portfolio-header">
             <!-- header container is divided into two divisions -->
             <div class="my-title">
-                <h1 class="my-title-text">SAKTHIPRIYA LOGANATHAN</h1>
-            </div>
-            <!-- used <nav> for linking sections -->
-            <div class="my-list">
-                <nav>
-                    <ul class="nav-items">
-                        <li>
-                            <a href="#about-me">About Me</a>
-                        </li>
-                        <li>
-                            <a href="#work">Work</a>
-                        </li>
-                        <li>
-                            <a href="#contact">Contact Me</a>
-                        </li>
-                        <li>
-                            <a href="#">Resume</a>
-                        </li>
-                    </ul>
+                <nav class="text-nav">
+                    <div class="text-wrapper">
+                        <div>
+                            <a class="nav-text"><h3 class="my-title-text">SAKTHIPRIYA LOGANATHAN</h3></a>
+                        </div>
+                        <div><a class="nav-text">PROJECTS</a></div>
+                        <div><a class="nav-text">ABOUT</a></div>
+                    </div>
+                    <div class="icon-wrapper">
+                        <div>
+                            <a class="icon-size" href="https://www.linkedin.com/in/sakthipriya-loganathan/" target="_blank" rel="noopener"
+                                ><iconify-icon icon="la:linkedin"></iconify-icon
+                            ></a>
+                        </div>
+                        <div>
+                            <a class="icon-size" href="mailto:sakthiloganathan1127@gmail.com"
+                                ><iconify-icon icon="basil:gmail-outline"></iconify-icon
+                            ></a>
+                        </div>
+                        <div>
+                            <a class="icon-size" href="https://github.com/SPloganathan" target="_blank" rel="noopener"
+                                ><iconify-icon icon="bytesize:github" style="color: white"></iconify-icon
+                            ></a>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
-        <main>
-            <!-- The subtitle section is divided into two divisions -->
-            <section class="subtitle-cover">
-                <!-- my image section -->
-                <div class="my-avatar-wrapper">
-                    <img class="my-avatar" src="./assets/images/myimage.jpeg" alt="Sakthipriya's avatar" />
+        <div class="carousel-actions">
+            <div class="button-prev">
+                <iconify-icon id="carousel-button-prev" icon="material-symbols:arrow-back-ios" style="color: white"></iconify-icon>
+            </div>
+            <div class="button-next">
+                <iconify-icon id="carousel-button-next" icon="material-symbols:arrow-forward-ios" style="color: white"></iconify-icon>
+            </div>
+        </div>
+        <div class="body-wrapper carousel-items carousel-item-visible">
+            <div class="circle">
+                <div class="designer">
+                    <div class="designer-text">&lt; DESIGNER &gt;</div>
                 </div>
-                <!-- subtitle -->
-                <div class="subtitle-text-wrapper">
-                    <h3 class="subtitle-text">Web Developer in progress!</h3>
+                <div class="my-image">
+                    <img src="./assets/images/sakthi1.JPG" alt="sakthi" />
                 </div>
-            </section>
-            <!-- About me section is divided into two divisions -->
-            <section class="section-wrapper" id="about-me">
-                <!-- class 'title-container' is set common for all titles in main -->
-                <div class="title-container">
-                    <!-- class 'title-text' is set common   -->
-                    <h2 class="title-text">About Me</h2>
+                <div class="coder">
+                    <div class="coder-text">&lt; CODER &gt;</div>
                 </div>
-                <div class="column-split-wrapper center-align">
-                    <p>
-                        <strong>Hi,I'm SAKTHI!</strong><br />
-                        Artist🎨, Foodie🍩, Explorer🧭.<br />
-                        From Pondichery to Washington🛩.<br />
-                        Alumna of Pondicherry University📚.<br />
-                        Intrigued by design, traveling, art, fabulous food and better conversation💁‍♀️.<br />
-                        Started my carrier in Fashion Designing and switching now to Web Developing👩‍💻.<br />
-                        <strong>And Am Still Learning!!!!</strong>
-                    </p>
-                </div>
-            </section>
-            <!-- A container for whole 'work' section and work section is divided into two division -->
-            <section class="section-wrapper" id="work">
-                <div class="title-container">
-                    <h2 class="title-text">Work</h2>
-                </div>
-                <!-- Class for work items included -->
-                <div class="column-split-wrapper">
-                    <!-- article section for Horiseon -->
-                    <a href="https://sploganathan.github.io/Challenge1/" target="_blank">
-                        <article class="work-wrapper">
-                            <div class="work-item"></div>
-                            <div class="work-text">
-                                <h3>Horiseon</h3>
-                                <p>HTML/CSS</p>
-                            </div>
-                        </article>
-                    </a>
-                    <!-- created a div for other work items -->
-                    <div class="items-wrapper">
-                        <a href="https://sploganathan.github.io/marvel-movies-3000/" target="_blank">
-                            <article class="work-wrapper">
-                                <div class="work-item marvel-item"></div>
-                                <div class="work-text">
-                                    <h3>Marvel Movies 3000</h3>
-                                    <p>HTML/CSS/JAVASCRIPT</p>
-                                </div>
-                            </article>
-                        </a>
-                        <a href="https://luv-2-h8.herokuapp.com/" target="_blank">
-                            <article class="work-wrapper">
-                                <div class="work-item luv2h8-item"></div>
-                                <div class="work-text">
-                                    <h3>Luv2H8</h3>
-                                    <p>HTML ,CSS ,JavaScript ,MySQL ,Sequelize ,Handlebars.js ,Node.js ,Express</p>
-                                </div>
-                            </article>
-                        </a>
-                        <article class="upcoming-work">
-                            <h3>My Upcoming Work</h3>
-                        </article>
-                        <article class="upcoming-work">
-                            <h3>My Upcoming Work</h3>
-                        </article>
+            </div>
+            <div class="description-wrapper">
+                <p class="text-content">I'm a Front-End and Back-End Developer who writes clean,elegant and efficient code located in Seattle,WA.</p>
+                <p class="text-content">
+                    Love creating beautiful user experiences. Well-organised person, problem solver with high attention to detail.
+                </p>
+            </div>
+        </div>
+
+        <!-- Projects page -->
+
+        <div class="project-body-wrapper carousel-items">
+            <div class="project-body-container">
+                <div class="border-wrapper">
+                    <div class="title-content-wrapper">
+                        <div class="title-content">
+                            <h2 class="title" id="project-title">MARVEL MOVIE 3000</h2>
+                        </div>
+                        <div class="content-wrapper">
+                            <p class="actual-content" id="project-description">
+                                Marvel-Movies-3000 allows the user to search for movies and characters related to the Marvel universe which will in
+                                turn provide us with a full movie description, movie posters, rating of the searched movie and full character details.
+                            </p>
+                        </div>
+                        <div class="content-icon">
+                            <a href="https://github.com/SPloganathan/marvel-movies-3000" target="_blank" id="project-github">
+                                <iconify-icon icon="logos:github-octocat"></iconify-icon
+                            ></a>
+                            <a href="https://sploganathan.github.io/marvel-movies-3000/" target="_blank" id="project-deployed"
+                                ><iconify-icon icon="mdi:web" style="color: white"></iconify-icon
+                            ></a>
+                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
-        <!-- footer section is divided into two divisions -->
-        <footer class="section-wrapper" id="contact">
-            <div class="title-container">
-                <h2 class="title-text">Contact Me</h2>
+                <div class="projects-wrapper">
+                    <div>
+                        <h2 class="title">PROJECTS</h2>
+                    </div>
+                    <div id="project-list"></div>
+                </div>
             </div>
-            <div class="contact-nav-wrapper">
-                <nav class="contact-nav">
-                    <!-- Linking done for contact info -->
-                    <ul class="contact-nav-items">
-                        <li>
-                            <a href="tel:+12066695568">206.669.5568</a>
-                        </li>
-                        <li>
-                            <a href="mailto:Sakthiloganathan1127@gmail.com">sakthiloganathan1127@gmail.com</a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/SPloganathan">GitHub</a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/sakthi-priya-605269242/">LinkedIn</a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/sakthipriyalog1">Twitter</a>
-                        </li>
-                    </ul>
-                </nav>
+        </div>
+
+        <!-- about page -->
+        <div class="about-wrapper carousel-items">
+            <div class="about-image-wrapper">
+                <div class="my-image">
+                    <img src="./assets/images/sakthi1.JPG" alt="sakthi" />
+                </div>
             </div>
-        </footer>
+            <div class="about-content-wrapper">
+                <p class="actual-content">
+                    Hello! I'm SAKTHIPRIYA LOGANATHAN and I love creating things that live on the internet. I love working on the web to a great
+                    extent and making sure it continues to be a place for everyone and our creative, personal, and weird passions. I enjoy using my
+                    obsessive attention to detail,love for making things work, and my mission-driven work ethic to literally change the world. When I
+                    am not writing codes, I enjoy traveling, movies and love to do arts. Here are few technologies I've been working with recently:
+                    JavaScript, Node.js, HTML5, Cascading Style Sheets(CSS), React.js, MongoDB
+                </p>
+            </div>
+        </div>
     </body>
+    <script src="./assets/js/script.js"></script>
 </html>
